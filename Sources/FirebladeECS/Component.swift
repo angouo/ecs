@@ -14,6 +14,9 @@ public protocol Component: AnyObject {
 
     /// Unique, immutable identifier of this component type.
     var identifier: ComponentIdentifier { get }
+    
+    /// Associated Entity
+    var entity: Entity
 }
 
 extension Component {
